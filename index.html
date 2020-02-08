@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--start main div-->
+    <div class="main">
+        <h1>register with us</h1>
+    <!--start form-->
+        <form>
+            <label>user name</label>
+            <input type="text" min="10" placeholder="user name" id="username">
+            <!--message of user name-->
+            <span class="usermessage">*username should be more than 10 letter</span>
+            <label>email</label>
+            <input type="email" placeholder="email" id="email">
+            <label>password</label>
+            <input type="password" min="8" max="20" placeholder="password" id="password">
+            <!--message for password-->
+            <span class="passmessage">password should be between 8 : 20 letter</span>
+            <label>confirm password</label>
+            <input type="password" min="8" max="20" placeholder="confirm password" id="confirm">
+            <input type="submit" id="submit" >
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
