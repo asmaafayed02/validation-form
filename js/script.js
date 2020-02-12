@@ -22,14 +22,15 @@ submitBtn.addEventListener('click',function(event){
         passMessage.innerHTML = 'these feilds are requird**';
        
   //check the length of username
-    }else if(userName.value.length < '10'){
+    }else if(userName.value.length < '6'){
            event.preventDefault();
            userMessage.style.display = 'block';
-     
+           userMessage.innerHTML = '*username should be more than 6 letter'
   //check the length of password
     }else if(password.value.length < '8' || password.value.length > '20' ){
         event.preventDefault();
         passMessage.style.display = 'block';
+        passMessage.innerHTML = 'password should be between 8 : 20 letter';
   //check the confirm password
     }else if(password.value != confirmPass.value){
         event.preventDefault();
